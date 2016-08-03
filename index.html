@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>jQuery Mortgage Calculator</title>
+
+ </head>
+
+<body>
+	<!--Alighn content to center and choose header-->
+	<div class = container align = center>
+	<h1>jQuery Mortgage Calculator</h1>
+	<!--Label and place input boxes, selector and button-->
+	<label>Loan Balance:</label>
+	<input id = "loanBalance" type = "text">
+		<br><br>
+	<label>Interest Rate (%):</label>
+	<input id = "interestRate" type = "text">
+		<br><br>
+	<label>Loan Term (years):</label>
+	<input id = "loanTerm" type = "text">
+		<br><br>
+	<label>Period:</label>
+	<select id = "period">
+		<option value = "monthly">Monthly</option>
+		<option value = "bimonthly">BiMonthly</option>
+	</select>
+		<br><br>
+	<button class = "button" id = "btnCalculate">Calculate</button>
+		<br><br>
+	<!--Place for Final outcome-->
+	<p1 id = "p1"> </p1>
+	</div>
+		<!--Load sources for jquery and javascript file-->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+  		<script src="index.js"></script>
+  		
+</body>
+</html>
